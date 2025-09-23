@@ -1,10 +1,23 @@
+import { useState } from "react";
+
+import HamburgerMenu from "./HamburgerMenu";
+
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const hamburgerButtonClickHandle = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <nav className="p-6">
         <div className="flex justify-between items-center">
           <div>
-            <button className="bg-white h-12 w-12 rounded-full">
+            <button
+              onClick={() => hamburgerButtonClickHandle()}
+              className="bg-white h-12 w-12 rounded-full"
+            >
               <i className="bi bi-plus text-4xl"></i>
             </button>
           </div>
@@ -20,6 +33,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
+      {menuOpen && <HamburgerMenu />}
     </>
   );
 };
