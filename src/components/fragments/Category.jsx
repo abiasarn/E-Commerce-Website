@@ -5,7 +5,7 @@ const Category = () => {
     <>
       <div>
         <h2 className="text-2xl font-semibold">Explore by category</h2>
-        <div className="flex flex-col gap-10 mt-10">
+        <div className="flex flex-col gap-10 mt-10 md:flex-row">
           <CategoryCard
             name="Women"
             image="/Color-Blocked Jacket Close-Up.png"

@@ -4,11 +4,13 @@ const Products = () => {
   return (
     <>
       <div>
-        <h2 className="text-2xl font-semibold text-center">Our Products</h2>
+        <h2 className="text-2xl font-semibold text-center md:text-3xl">
+          Our Products
+        </h2>
         <p className="text-base font-normal text-black opacity-50 text-center">
           Exclusive and premium.
         </p>
-        <div className="grid grid-cols-2 gap-5 mt-10">
+        <div className="grid grid-cols-2 gap-5 mt-10 md:grid-cols-3 lg:grid-cols-4">
           <ProductCard
             name="Air Jacket"
             price="$100"

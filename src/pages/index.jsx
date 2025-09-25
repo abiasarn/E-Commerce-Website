@@ -10,27 +10,27 @@ const MainPage = () => {
   return (
     <>
       <Navbar />
-      <main className="px-6">
-        <div className="flex flex-col gap-10 mb-10">
+      <main className="px-6 lg:px-16 lg:mt-5">
+        <div className="flex flex-col gap-10 mb-10 md:flex-row md:gap-5 md:mb-16">
           <Hero />
           <img
             src="/Floating Varsity Jacket.png"
             alt=""
-            className="rounded-3xl"
+            className="w-full rounded-3xl md:w-[50%] lg:w-[50%]"
           />
         </div>
         <Sponsors />
       </main>
-      <section className="p-6 mt-10">
+      <section className="p-6 mt-10 lg:px-16">
         <Category />
       </section>
-      <section className="p-6 mt-10">
+      <section className="p-6 mt-10 lg:px-16">
         <Products />
       </section>
-      <section className="p-6 mt-10">
+      <section className="p-6 mt-10 lg:px-16">
         <CtaArea />
       </section>
-      <footer className="p-6 mt-10">
+      <footer className="p-6 mt-10 lg:px-16">
         <Footer />
       </footer>
     </>

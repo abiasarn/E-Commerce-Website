@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <>
-      <div className="bg-white w-full rounded-3xl p-5">
+      <div className="bg-white w-full rounded-3xl p-5 md:w-[50%] lg:w-[50%] lg:p-10">
         <div>
           <h1 className="text-3xl font-semibold">Exclusive Jackets Are Here</h1>
           <p className="text-base font-normal text-black opacity-50 mt-7">

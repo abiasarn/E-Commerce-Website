@@ -2,7 +2,7 @@ const ProductCard = (props) => {
   const { name, price, image, link } = props;
   return (
     <>
-      <div className="bg-white w-40 rounded-2xl">
+      <div className="bg-white w-40 rounded-2xl md:w-52">
         <img src={image} alt={name} className="rounded-t-2xl" />
         <div className="flex justify-between items-center p-2 py-5">
           <div>
